@@ -162,7 +162,7 @@ export default function Testimonials() {
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-indigo-600/10 rounded-full blur-3xl" />
 
             {/* Quote mark */}
-            <div className="text-blue-500/20 text-[120px] font-black leading-none absolute top-4 left-8 select-none">
+            <div className="text-blue-500/20 text-[60px] sm:text-[80px] md:text-[120px] font-black leading-none absolute top-4 left-8 select-none">
               "
             </div>
 

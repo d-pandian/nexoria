@@ -59,7 +59,7 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.05] tracking-tight mb-5">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.05] tracking-tight mb-5">
               Transform Your Projects{" "}
               <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
                 Into Premium
@@ -114,7 +114,7 @@ export default function Hero() {
           </div>
 
           {/* ── Right: Founder Card ─────────────── */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end px-4 sm:px-0">
             <div className="relative w-full max-w-sm">
               {/* Glow behind card */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-indigo-600/20 rounded-3xl blur-2xl scale-105" />
@@ -182,13 +182,13 @@ export default function Hero() {
                 </Link>
               </div>
 
-              {/* Floating stat cards */}
-              <div className="absolute -left-6 top-12 bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl px-4 py-3 shadow-lg">
+              {/* Floating stat cards — hidden on mobile to prevent overflow */}
+              <div className="hidden sm:block absolute -left-6 top-12 bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl px-4 py-3 shadow-lg">
                 <div className="text-white font-black text-xl">4.97</div>
                 <div className="text-slate-300 text-xs">⭐ Avg Rating</div>
               </div>
 
-              <div className="absolute -right-6 bottom-20 bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl px-4 py-3 shadow-lg">
+              <div className="hidden sm:block absolute -right-6 bottom-20 bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl px-4 py-3 shadow-lg">
                 <div className="text-white font-black text-xl">500+</div>
                 <div className="text-slate-300 text-xs">🌍 Clients</div>
               </div>
