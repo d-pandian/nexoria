@@ -23,9 +23,9 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "Phone / WhatsApp",
-    value: "+91 98765 43210",
+    value: "+91 90253 67827 / +91 63804 29824",
     sub: "Mon – Sat, 9 AM – 7 PM IST",
-    href: "tel:+919876543210",
+    href: "tel:+919025367827",
     color: "emerald",
   },
   {
@@ -126,7 +126,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="font-bold text-white">Pandian D</div>
-                  <div className="text-blue-300 text-sm">Founder & CEO, JP</div>
+                  <div className="text-blue-300 text-sm">CEO</div>
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                     <span className="text-green-400 text-xs font-medium">Available for sessions</span>
