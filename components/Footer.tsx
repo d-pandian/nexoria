@@ -59,21 +59,22 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
       {/* CTA Band */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, #1d4ed8 0%, #1e40af 40%, #3730a3 100%)" }}>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
                 Ready to Transform Your Projects?
               </h3>
-              <p className="text-blue-100 mt-1">
-                Join hundreds of professionals using Nexoria to grow their
-                revenue.
+              <p className="text-blue-200 mt-2 text-sm md:text-base">
+                Join hundreds of professionals using Nexoria to grow their revenue.
               </p>
             </div>
             <Link
               href="/booking"
-              className="flex-shrink-0 px-8 py-3.5 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 active:scale-95 transition-all shadow-lg"
+              className="flex-shrink-0 px-8 py-3.5 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 active:scale-[0.98] transition-all tracking-tight"
+              style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.15)" }}
             >
               Start Your Session →
             </Link>
@@ -149,7 +150,7 @@ export default function Footer() {
           {/* Links */}
           {Object.entries(FOOTER_LINKS).map(([category, links]) => (
             <div key={category}>
-              <h4 className="text-white font-semibold text-sm mb-4">
+              <h4 className="text-white font-semibold text-xs tracking-wider uppercase mb-4">
                 {category}
               </h4>
               <ul className="space-y-3">
@@ -157,7 +158,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-slate-400 text-sm hover:text-white transition-colors"
+                      className="text-slate-400 text-sm hover:text-slate-200 transition-colors duration-200"
                     >
                       {link.label}
                     </Link>

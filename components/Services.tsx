@@ -94,11 +94,11 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold mb-4">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-xs font-semibold tracking-wider uppercase mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
             Our Services
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
             Everything You Need to{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Grow & Scale
@@ -117,7 +117,10 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className={`bg-white rounded-2xl p-7 border border-slate-100 ${styles.border} transition-all duration-300 hover:shadow-xl group`}
+                className={`bg-white rounded-2xl p-8 border border-slate-100 ${styles.border} transition-all duration-300 hover:-translate-y-1 group`}
+                style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.05)" }}
+                onMouseEnter={e => (e.currentTarget.style.boxShadow = "0 4px 8px rgba(0,0,0,0.04), 0 20px 44px rgba(0,0,0,0.09)")}
+                onMouseLeave={e => (e.currentTarget.style.boxShadow = "0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.05)")}
               >
                 {/* Icon */}
                 <div
@@ -176,7 +179,10 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className={`bg-white rounded-2xl p-7 border border-slate-100 ${styles.border} transition-all duration-300 hover:shadow-xl group`}
+                className={`bg-white rounded-2xl p-8 border border-slate-100 ${styles.border} transition-all duration-300 hover:-translate-y-1 group`}
+                style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.05)" }}
+                onMouseEnter={e => (e.currentTarget.style.boxShadow = "0 4px 8px rgba(0,0,0,0.04), 0 20px 44px rgba(0,0,0,0.09)")}
+                onMouseLeave={e => (e.currentTarget.style.boxShadow = "0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.05)")}
               >
                 <div
                   className={`w-14 h-14 rounded-2xl ${styles.icon} flex items-center justify-center text-2xl mb-5`}

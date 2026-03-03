@@ -109,11 +109,11 @@ export default function Pricing() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-semibold mb-4">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold tracking-wider uppercase mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
             Pricing Plans
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
             Transparent Pricing.{" "}
             <span className="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
               Real Results.
@@ -150,9 +150,15 @@ export default function Pricing() {
                 onMouseLeave={() => setHoveredPlan(null)}
                 className={`relative flex flex-col rounded-2xl transition-all duration-300 ${
                   isFeatured
-                    ? "bg-gradient-to-b from-slate-900 to-slate-800 text-white shadow-2xl scale-[1.03] ring-1 ring-indigo-500/40"
-                    : `bg-white border border-slate-200 ${isHovered ? "shadow-xl -translate-y-1" : "shadow-sm"}`
+                    ? "bg-gradient-to-b from-slate-900 to-[#111827] text-white md:scale-[1.02] ring-1 ring-white/10"
+                    : `bg-white border border-slate-150 ${isHovered ? "-translate-y-1.5 border-slate-200" : ""}`
                 }`}
+                style={isFeatured
+                  ? { boxShadow: "0 8px 16px rgba(0,0,0,0.12), 0 32px 64px rgba(0,0,0,0.22)" }
+                  : isHovered
+                  ? { boxShadow: "0 4px 8px rgba(0,0,0,0.04), 0 20px 44px rgba(0,0,0,0.09)" }
+                  : { boxShadow: "0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.05)" }
+                }
               >
                 {/* Badge */}
                 {plan.badge && (
