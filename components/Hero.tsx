@@ -12,7 +12,6 @@ const STATS = [
 ];
 
 const FOUNDER_BADGES = [
-  { icon: "🏆", text: "7+ Years Experience" },
   { icon: "🌍", text: "Global Clients" },
   { icon: "💼", text: "500+ Projects" },
 ];
